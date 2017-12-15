@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Test_Registry">
+      <UniqueIdentifier>{b8e117a2-29fb-4c8b-8cb0-05a86c264452}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Test_RegistryKey">
+      <UniqueIdentifier>{e5b6fdea-a77e-484a-900d-a706497ea805}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TConstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_RegistryKey.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Test_Registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTests.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_WinRegKey.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest\gtest-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock\gmock-all.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_GetBinaryValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_GetDwordValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_GetExpandedStringValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_GetMultiStringValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_GetQwordValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_GetStringValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_SetBinaryValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_SetDwordValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_SetExpandedStringValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_SetMultipleStringValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_SetQwordValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_Registry_SetStringValue.cpp">
+      <Filter>Source Files\Test_Registry</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_OpenSubKey.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_CLassesRoot.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_CurrentConfig.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_CurrentUser.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_LocalMachine.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_Users.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_Name.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_SubKeyCount.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_ValueCount.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_View.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_GetValueNames.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_GetValueKind.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_GetSubKeyNames.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_GetValue.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_SetValue.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_CreateSubKey.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+    <ClCompile Include="Test_RegistryKey_DeleteValue.cpp">
+      <Filter>Source Files\Test_RegistryKey</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
