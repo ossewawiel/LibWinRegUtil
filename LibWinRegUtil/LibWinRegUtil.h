@@ -50,7 +50,7 @@ namespace WinReg
 		, eValueKindQWord = 11
 	};
 
-	enum class enumKeyAccess : std::uint32_t
+	enum class eRegKeyAccess : std::uint32_t
 	{
 		  eKeyAllAccess = 0xF003F
 		, eKeyCreateLink = 0x0020
