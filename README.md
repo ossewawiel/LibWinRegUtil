@@ -118,7 +118,12 @@ A class created for and attached to a specific registry key that enables more gr
 | **GetValueKind(wstring)** | Returns the eRegValueKind kind of the specified value in the current open key. |
 | **GetValueNames()** | Returns a wstring vector of the value names in the current open key. |
 | **OpenSubKey(wstring, eRegAccessRights)** | Opens the specified subkey with the supplied access rights (Defaults to eAccessKeyRead) under the current open key. Will throw if the key does not exist. |
-
+| **SetBinaryValue(wstring, vector\<BYTE\>)** | Sets the value of a REG_BINARY value in the current open key by accepting a BYTE vector. If the value does not yet exist it will be created. |
+| **SetDwordValue(wstring, DWORD)** | Sets the value of a REG_DWORD value in the current open key. If the value does not yet exist it will be created. |
+| **SetExpandedStringValue(wstring, wstring)** | Sets the value of a REG_EXPAND_SZ value in the current open key by accepting a wstring. If the value does not yet exist it will be created. |
+| **SetMultiStringValue(wstring, vector\<wstring\>)** | Sets the value of a REG_MULTI_SZ value in the current open key by accepting a wstring vector. If the value does not yet exist it will be created. |
+| **SetQwordValue(wstring, ULONGLONG)** | Sets the value of a REG_QWORD value in the current open key by accepting a ULONGLONG. If the value does not yet exist it will be created. |
+| **SetStringValue(wstring, wstring)** | Sets the value of a REG_SZ value in the current open key by accepting a wstring. If the value does not yet exist it will be created. |
 
 ### Enumerators
 #### WinReg::eHKey
