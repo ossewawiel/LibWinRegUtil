@@ -85,14 +85,40 @@ The Registry namespace gives you easy access to common registry tasks as well as
 | **SetQwordValue(eHKey, wstring, wstring, ULONGLONG)** | Sets the value of a REG_QWORD value in the specified registry key location by accepting a ULONGLONG. If the value does not yet exist it will be created. |
 | **SetStringValue(eHKey, wstring, wstring, wstring)** | Sets the value of a REG_SZ value in the specified registry key location by accepting a wstring. If the value does not yet exist it will be created. |
 
-### Class WnReg::RegistryKey
+### Class WinReg::RegistryKey
 A class created for and attached to a specific registry key that enables more granular manipulation of the key, its values and sub keys.
 
 #### Constructor
+| Name | Description |
+| :--- | :---|
+| **CRegistryKey(eHkey)** | Returns an open read-only base key for the specified eHKey. |
 
 #### Properties
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **Name()** | Get | Returns a wstring full path name of the current open key. |
+| **SubKeyCount()** | Get | Returns an int count of the usb keys in the current open key. |
+| **ValueCount()** | Get | Returns an int count of the values in the current open key. |
+| **View()** | Get | Returns an eRegView view type of the current open key. |
 
 #### Methods
+| Name | Description |
+| :--- | :--- |
+| **CreateSubKey(wstring, eRegAccessRights)** | Creates a new CRegistryKey sub key under the current open key with the specified access rights (Defaults to eAccessKeyRead). If the key already exists it returns the existing key. |
+| **DeleteSubKey(wstring)** | Deletes the specified sub key under the current open key. |
+| **DeleteValue(wstring)** | Deletes the specified value under the current open key. |
+| **Flush()** | Flushes the current current open key ensuring all changes as saved to disk. |
+| **GetBinaryValue(wstring, bool)** | Returns a binary value as vector\<BYTE\> for a REG_BINARY value in the current open key and if flagged will throw in case of an exception else it will return an empty vector. |
+| **GetDwordValue(wstring, bool, DWORD)** | Returns a DWORD value for a REG_DWORD value in the current open key and if flagged will throw in case of an exception else it will return the supplied default value. |
+| **GetExpandedStringValue(wstring, bool, wstring)** | Returns a wstring value for a REG_EXPAND_SZ value in the current open key and if flagged will throw an exception else it will return the supplied default value. |
+| **GetMultiStringValue(wstring, wstring, bool)** | Returns a wstring vector for a REG_MULTI_SZ value in the current open key and if flagged will throw in case of an exception else it will return an empty vector. |
+| **GetQwordValue(wstring, bool, ULONGLONG)** | Returns a ULONGLONG value for a REG_QWORD value in the current open key and if flagged will throw in case of an exception else it will return the supplied default value. |
+| **GetStringValue(wstring, bool, wstring)** | Returns a wstring value for a REG_SZ value in the current open key and if flagged will throw in case of an exception else it will return the supplied default value. |
+| **GetSubKeyNames()** | Returns a wstring vector of the sub key names in the current open key. |
+| **GetValueKind(wstring)** | Returns the eRegValueKind kind of the specified value in the current open key. |
+| **GetValueNames()** | Returns a wstring vector of the value names in the current open key. |
+| **OpenSubKey(wstring, eRegAccessRights)** | Opens the specified subkey with the supplied access rights (Defaults to eAccessKeyRead) under the current open key. Will throw if the key does not exist. |
+
 
 ### Enumerators
 #### WinReg::eHKey
