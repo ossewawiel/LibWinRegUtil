@@ -135,3 +135,25 @@ A class created for and attached to a specific registry key that enables more gr
 | eHKeyCurrentUser | 3 | Mapping to HKEY_CURRENT_USER. |
 | eHKeyLocalMachine | 4 | Mapping to HKEY_LOCAL_MACHINE. |
 | eHKeyUsers | 5 | Mapping to HKEY_USERS. |
+
+#### WinReg::eRegAccessRights
+| Name | Value | Description |
+| :--- | ---: | :--- |
+| eAccessKeyAllAccess | 0xF003F | Combines the STANDARD_RIGHTS_REQUIRED, KEY_QUERY_VALUE, KEY_SET_VALUE, KEY_CREATE_SUB_KEY, KEY_ENUMERATE_SUB_KEYS, KEY_NOTIFY, and KEY_CREATE_LINK access rights. Maps to KEY_ALL_ACCESS. |
+| eAccessKeyCreateSubKey | 0x0004 | Required to create a subkey of a registry key. Maps to KEY_CREATE_SUB_KEY. |
+| eAccessKeyEnumerateSubKeys | 0x0008 | Required to enumerate the subkeys of a registry key. Maps to KEY_ENUMERATE_SUB_KEYS. |
+| eAccessKeynotify | 0x0010 | Required to request change notifications for a registry key or for subkeys of a registry key. Maps to KEY_NOTIFY . |
+| eAccessKeyQueryValue | 0x0001 | Required to query the values of a registry key. Maps to KEY_QUERY_VALUE. |
+| eAccessKeyRead | 0x20019 | Combines the STANDARD_RIGHTS_READ, KEY_QUERY_VALUE, KEY_ENUMERATE_SUB_KEYS, and KEY_NOTIFY values. Maps to KEY_READ. |
+| eAccessKeySetValue | 0x0002 | Required to create, delete, or set a registry value. Maps to KEY_SET_VALUE. |
+| eAccessKeyWrite | 0x20006 | Combines the STANDARD_RIGHTS_WRITE, KEY_SET_VALUE, and KEY_CREATE_SUB_KEY access rights. Maps to KEY_WRITE. |
+
+#### WinReg::eRegView
+| Name | Value | Description |
+| :--- | ---: | :--- |
+| eViewDefault | 0x0000 | Current default setting. |
+| eViewWow6432 | 0x0200 | Viewing 32 bit entry. |
+| eViewWow6464 | 0x0100 | Viewing 64 bit entry. |
+| eViewUndefined | 0x9999 | View option not set. |
+
+
