@@ -156,4 +156,16 @@ A class created for and attached to a specific registry key that enables more gr
 | eViewWow6464 | 0x0100 | Viewing 64 bit entry. |
 | eViewUndefined | 0x9999 | View option not set. |
 
+#### WinReg::eRegValueKind
+| Name | Value | Description |
+| :--- | ---: | :--- |
+| eValueKindUnknown | 0 | Default setting. |
+| eValueKindString | 1 | Map to REG_SZ |
+| eValueKindExpandedString | 2 | Map to REG_EXPAND_SZ. |
+| eValueKindBinary | 3 | Map to REG_BINARY. |
+| eValueKindDword | 4 | Map to REG_DWORD. |
+| eValueKindMultiString | 7 | Map to REGNULTI_SZ |
+| eValueKindQWord | 11 | Map to REG_QWORD |
+
+
 
